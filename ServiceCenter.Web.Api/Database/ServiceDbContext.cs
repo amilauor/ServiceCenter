@@ -6,7 +6,7 @@ namespace ServiceCenter.Web.Api.Database
     public class ServiceDbContext:DbContext
     {
         private readonly IConfiguration _configuration;
-
+                
         public DbSet<Service> Services { get; set; }
         public DbSet<Vehicle> Vehicles { get; set; }
         public DbSet<Manager> Managers { get; set; }

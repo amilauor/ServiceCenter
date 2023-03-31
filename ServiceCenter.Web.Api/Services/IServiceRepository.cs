@@ -4,7 +4,7 @@ namespace ServiceCenter.Web.Api.Services
 {
     public interface IServiceRepository
     {
-        ValueTask<IQueryable<Service>> SelectServicesAsync();
+        IQueryable<Service> SelectServices();
         ValueTask<Service> SelectServicesAsync(Guid Id);
         ValueTask<Service> InsertServicesAsync(Service service);
         ValueTask<Service> UpdateServicesAsync(Service service);
